@@ -1,6 +1,7 @@
 # Database
+
 sql Database
-#ROW , DENSE_RANK(),RANK()
+Find the ROW() , DENSE_RANK(),RANK() in SQL.
 
 SELECT
 [Order ID],Sales,
