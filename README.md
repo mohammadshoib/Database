@@ -1,6 +1,7 @@
 # Database
 sql Database
 #ROW , DENSE_RANK(),RANK()
+
 SELECT
 [Order ID],Sales,
 ROW_NUMBER() OVER(ORDER BY Sales DESC) AS ROW,
