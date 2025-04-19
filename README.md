@@ -1,2 +1,10 @@
 # Database
 sql Database
+#ROW , DENSE_RANK(),RANK()
+SELECT
+[Order ID],Sales,
+ROW_NUMBER() OVER(ORDER BY Sales DESC) AS ROW,
+DENSE_RANK() OVER(ORDER BY Sales DESC) AS DENSERNK,
+RANK() OVER(ORDER BY Sales DESC) AS RNK
+FROM
+[dbo].[OrderBreakdown$]
