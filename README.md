@@ -1,12 +1,1 @@
 # Database
-
-sql Database
-Find the ROW() , DENSE_RANK(),RANK() in SQL.
-
-SELECT
-[Order ID],Sales,
-ROW_NUMBER() OVER(ORDER BY Sales DESC) AS ROW,
-DENSE_RANK() OVER(ORDER BY Sales DESC) AS DENSERNK,
-RANK() OVER(ORDER BY Sales DESC) AS RNK
-FROM
-[dbo].[OrderBreakdown$]
