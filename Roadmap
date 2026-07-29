@@ -1,0 +1,54 @@
+Week 1: SQL Fundamentals
+
+Topics
+
+What is SQL?
+Database, Schema, Table
+Data Types
+CREATE TABLE
+INSERT
+UPDATE
+DELETE
+TRUNCATE
+DROP
+SELECT
+WHERE
+DISTINCT
+ORDER BY
+LIMIT/TOP
+Aliases
+
+Week 2: Filtering & Functions
+AND
+OR
+NOT
+IN
+BETWEEN
+LIKE
+IS NULL
+CASE WHEN
+COALESCE
+CAST
+CONVERT
+String Functions
+CONCAT
+SUBSTRING
+REPLACE
+LENGTH/LEN
+TRIM
+UPPER
+LOWER
+Date Functions
+GETDATE()
+CURRENT_DATE
+DATEADD
+DATEDIFF
+DATEPART
+Numeric Functions
+ROUND
+CEILING
+FLOOR
+ABS
+
+
+75 filtering questions.
