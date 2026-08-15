@@ -1,0 +1,19 @@
+CREATE DATABASE demoDB
+GO
+
+USE demoDB
+GO
+
+CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'Password01'
+GO
+
+CREATE DATABASE SCOPED CREDENTIAL myCredential
+WITH IDENTITY = 'SHARED ACCESS SIGNATURE',
+SECRET = 'sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupyx&se=2023-11-18T06:33:30Z&st=2023-11-17T22:33:30Z&spr=https&sig=nFRxUzJvS49UvR0JGeM5TK2UgvO48ftNJt5rv9fiC9o%3D'
+GO
+
+CREATE EXTERNAL DATA SOURCE myDataSource WITH(
+    LOCATION = 'https://gen2storageaccount257.dfs.core.windows.net/',
+    CREDENTIAL = myCredential
+    )
+
